@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="Media_Queries.css">
+    <style>
+        #container {
+            background-color: blue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #MobileBtn {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            #MobileBtn {
+                background-color: blue;
+                display: flex;
+                justify-content: flex-end;
+            }
+            #container {
+            display: none;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <p>Tutorials</p>
+        <p>Projects</p>
+        <p>Location</p>
+    </div>
+    <div id="MobileBtn">
+        <p>Menu</p>
+    </div>
+
+</body>
+
+</html>
